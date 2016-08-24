@@ -17,3 +17,6 @@ gem install bundler
 echo -e "\ninstalling your bundle...\n"
 su - vagrant -c "cd /vagrant/; bundle install --quiet"
 
+sudo systemctl enable influxdb.service
+sudo systemctl start influxdb.service
+
